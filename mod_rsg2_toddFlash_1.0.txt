@@ -1,0 +1,1 @@
+A simple module to display the Todd flash player. The Todd flash player displays a slideshow of photos with the fade effect. It is a little buggy, so this is more a proof of concept for other modules. Joomla 1.0.x

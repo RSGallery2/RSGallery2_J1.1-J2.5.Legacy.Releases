@@ -1,0 +1,10 @@
+Version 1.0 RC2 (for Joomla 1.0.x)
+November 2006
+By Dave Ludwigsen
+
+Displays a rudimentary tab with RSGallery2 information. This 
+alpha release contains a listing of all galleries the user 
+has uploaded with a random image for the thumbnail. If the 
+user is in his or her own gallery, it also displays a link to 
+edit his or her own galleries. There are currently no 
+parameters.

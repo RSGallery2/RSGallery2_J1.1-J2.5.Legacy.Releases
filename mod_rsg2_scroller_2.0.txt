@@ -1,0 +1,4 @@
+A scroller module for RSGallery2 thumbnails. Works in Joomla 1.5.x.
+
+Install module through Backend and publish. 
+

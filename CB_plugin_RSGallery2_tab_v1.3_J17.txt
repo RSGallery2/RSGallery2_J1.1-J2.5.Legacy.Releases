@@ -1,0 +1,37 @@
+Version 1.3 (for Joomla 1.7.x)
+9 January 2012
+By Dave Ludwigsen and RSGallery2 Team
+
+Displays a tab with RSGallery2 galleries on the Community 
+Builder User profile. This tab contains a list of all 
+published galleries owned by the user with either a random 
+image for the thumbnail or the thumbnail that is assigned 
+to the gallery. If My Galleries is enabled in the 
+RSGallery2 configuration a link to edit his or her own 
+galleries is displayed. There are currently no parameters. 
+(Note: Since there is no way to detect the proper 
+RSGallery2 menu item, because there can be many of them, 
+the CB User profile menu item is used in the breadcrumb 
+trail.)
+
+Tested with
+- Joomla 1.7.3
+- RSGallery2 3.0.1
+- Community Builder 1.7.1
+
+Install
+- Download the zip file
+- Backend > Community Builder > Plugin Management
+- Click: Install Plugin
+- Select your downloaded package file at Package File and 
+click Upload & Install (or use one the the other ways on 
+this page to install)
+- A success message should appear. Read the description 
+text and click Continue
+- Publish the RSGallery2 plugin
+
+A logged in fronted user will see an extra tab besides 
+"Contact Info" called "My Galleries". On this tab the 
+galleries are shown that the user owns. When My Galleries 
+is enabled in RSGallery2 a link to My Galleries will be 
+shown as well.

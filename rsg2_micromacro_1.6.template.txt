@@ -1,0 +1,1 @@
+RSG2 template. J1.0 only. Display an entire gallery tree on one page. Uses overLIB and Lightbox2.

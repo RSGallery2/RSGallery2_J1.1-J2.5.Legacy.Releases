@@ -1,0 +1,1 @@
+Rsg2 template. J1.5 legacy and J1.0. Displays a gallery of MP3s for download or streaming with the XSPF player.

@@ -1,0 +1,50 @@
+(Contents from "Using Todd's free slideshow." written by Jonah Braun on 12 March 2007)
+
+
+The easiest way to get started using flash slideshows from a user perspective is with Todd Dominey's free flash slideshow which we are shipping with RSG2.
+
+If you want to start immediately, skip directly to Step 4. 
+
+Step 1: Create the gallery you want to show.  Upload pictures as normal.  Get the Gallery ID, you will need this next.
+
+ 
+
+Step 2: Create the XML location URL.  RSGallery2 will generate an XML for any gallery.  Here is a sample URL: /index.php?option=com_rsgallery2&task=xml&xmlTemplate=todd_dominey&gid=2
+
+/index.php?option=com_rsgallery2 tells Joomla! to use RSGallery2.
+
+&task=xml tells RSG2 that we want to generate a xml file
+
+&xmlTemplate=todd_dominey tells RSG2 which xml template to use.  This must match up with the flash object you are using, in this case Todd's.
+
+&gid=2 specifies which gallery to display
+
+Now that we have our URL, it must be encoded to pass to the flash object.  You can use Eric Meyer's URL encoder to make it easy.  After encoding the URL looks like this: /index.php%3Foption%3Dcom_rsgallery2%26task%3Dxml%26xmlTemplate%3Dtodd_dominey%26gid%3D2  You can use this URL, just change the last number to the gallery ID you want to display.
+
+You can extra parameters to this URL which configure how the slideshow displays.  here they are:
+
+'timer' :: number of seconds between each image transition
+'order' :: how you want your images displayed. choose either 'sequential' or 'random'
+'looping' :: if the slide show is in sequential mode, this stops the show at the last image (use 'yes' for looping, 'no' for not)
+'fadeTime' :: velocity of image crossfade. Increment for faster fades, decrement for slower. Approximately equal to seconds.
+'xpos' :: _x position of all loaded clips (0 is default)
+'ypos' :: _y position of all loaded clips (0 is default)
+
+Step 3: Create the flash object code.  For our example, here is the flash object code:
+
+<object type="application/x-shockwave-flash" data="/components/com_rsgallery2/flash/todd_dominey.swf?xmlName=/index.php%3Foption%3Dcom_rsgallery2%26task%3Dxml%26xmlTemplate%3Dtodd_dominey%26gid%3D2" width="200" height="200" align="middle">
+<param name="allowScriptAccess" value="sameDomain" />
+<param name="movie" value="/components/com_rsgallery2/flash/todd_dominey.swf?/index.php%3Foption%3Dcom_rsgallery2%26task%3Dxml%26xmlTemplate%3Dtodd_dominey%26gid%3D2" />
+<param name="quality" value="high" />
+<param name="bgcolor" value="#ffffff" />
+</object>
+
+This shows a gallery with the default options.  Note the data and movie parameters.  They start with: /components/com_rsgallery2/flash/todd_dominey.swf  This is the location of the flash object.  Next it has ?xmlName=  This specifies XML file to use, right after that we have pasted the XML location URL we created in Step 2.
+
+You may want to change the width, height or background color. 
+
+ 
+
+Step 4: Insert the flash object code into your content item.  You can use the exact object code from Step 3.  You just need to change the gallery ID to the gallery you want to use.  Remember that the gallery ID is in two locations, at the end of both data and movie parameters.  See the next article for an example!
+
+Warning: Many WYSIWYG editors will eat the flash object code.  You may have to turn your editor off before editing the content item. 

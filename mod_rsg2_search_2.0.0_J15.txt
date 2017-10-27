@@ -1,0 +1,1 @@
+This module (for Joomla 1.5.x) shows the RSGallery2 search box. (Don't forget to enable this module!) Note: for some 3rd pary SEF components the links for the result found might not work. It does work for Joomla SEF though.
